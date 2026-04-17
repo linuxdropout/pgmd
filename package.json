@@ -1,0 +1,33 @@
+{
+  "name": "pgmd",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace pgmd-frontend",
+    "dev:backend": "npm run dev --workspace pgmd-backend",
+    "build": "npm run build --workspace @pgmd/shared && npm run build --workspace @pgmd/parsing && npm run build --workspace pgmd-backend && npm run build --workspace pgmd-frontend",
+    "typecheck": "npm run typecheck --workspace @pgmd/shared && npm run typecheck --workspace @pgmd/parsing && npm run typecheck --workspace pgmd-backend && npm run typecheck --workspace pgmd-frontend",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "knip": "knip",
+    "test": "npm run test --workspace pgmd-backend && npm run test --workspace pgmd-frontend"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^16.5.0",
+    "jsdom": "^29.0.2",
+    "knip": "^6.4.1",
+    "prettier": "^3.8.3",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.58.2"
+  }
+}

@@ -1,0 +1,21 @@
+node_modules
+coverage
+playwright-report
+test-results
+dist
+*.tsbuildinfo
+
+# package-specific output
+frontend/dist
+backend/dist
+
+# environment
+.env
+.env.*
+!.env.example
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

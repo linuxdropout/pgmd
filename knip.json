@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "frontend/src/main.tsx",
+    "backend/src/index.ts",
+    "packages/shared/src/index.ts",
+    "packages/parsing/src/index.ts"
+  ],
+  "project": [
+    "frontend/src/**/*.{ts,tsx}",
+    "frontend/tests/**/*.ts",
+    "backend/src/**/*.ts",
+    "packages/shared/src/**/*.ts",
+    "packages/parsing/src/**/*.ts"
+  ],
+  "ignore": [
+    "frontend/src/vite-env.d.ts"
+  ]
+}

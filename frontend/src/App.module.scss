@@ -1,0 +1,60 @@
+.app {
+  min-height: 100vh;
+  padding: 3rem 1.25rem;
+  color: #0f172a;
+  background: radial-gradient(circle at top, #ecf2ff 0%, #f8fafc 40%, #eef2ff 100%);
+}
+
+.panel {
+  width: min(100%, 42rem);
+  padding: 2rem;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgb(15 23 42 / 8%);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 0.75rem 0 0;
+  color: #475569;
+}
+
+.counterRow {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.counterValue {
+  min-width: 3rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.primaryButton {
+  padding: 0.7rem 1.1rem;
+  font: inherit;
+  color: #fff;
+  cursor: pointer;
+  background: #0f172a;
+  border: 0;
+  border-radius: 0.6rem;
+}
+
+.primaryButton:hover {
+  background: #1d4ed8;
+}
+
+.primaryButton:focus-visible {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+}
