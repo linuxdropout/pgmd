@@ -26,18 +26,44 @@
   color: #475569;
 }
 
-.counterRow {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 1.5rem;
+.fieldLabel {
+  display: block;
+  margin-top: 1.4rem;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
 }
 
-.counterValue {
-  min-width: 3rem;
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
+.sqlInput,
+.sqlOutput,
+.treeOutput {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+  font-size: 0.93rem;
+  line-height: 1.45;
+  resize: vertical;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.7rem;
+}
+
+.sqlInput:focus-visible,
+.sqlOutput:focus-visible,
+.treeOutput:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 1px;
+}
+
+.sqlOutput,
+.treeOutput {
+  background: #f8fafc;
+}
+
+.actionsRow {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .primaryButton {
@@ -54,7 +80,35 @@
   background: #1d4ed8;
 }
 
+.primaryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
 .primaryButton:focus-visible {
   outline: 2px solid #0f172a;
   outline-offset: 2px;
+}
+
+.errorText {
+  margin-top: 0.75rem;
+  color: #dc2626;
+}
+
+.warningsPanel {
+  padding: 0.9rem;
+  margin-top: 1rem;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 0.7rem;
+}
+
+.warningsTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.warningsList {
+  margin: 0.55rem 0 0;
+  padding-left: 1.2rem;
 }
